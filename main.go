@@ -15,14 +15,14 @@ func main() {
 	// args := []string{"8........", "..36.....", ".7..9.2..", ".5...7...", "....457..", "...1...3.", "..1....68", "..85...1.", ".9....4.."}
 
 	if !isValid(args) {
-		fmt.Println("args Error")
+		fmt.Println("Error")
 		return
 	}
 
 	board := strToNumSlice(args)
 
 	if !boardValid(board) {
-		fmt.Println("board Error")
+		fmt.Println("Error")
 		return
 	}
 
@@ -31,7 +31,7 @@ func main() {
 	if solveSudoku(board) {
 		print(board)
 	} else {
-		fmt.Println("qwe")
+		fmt.Println("Error")
 	}
 
 }
